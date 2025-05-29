@@ -2,87 +2,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Silent Pods</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Calm Capsules</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Silent Pods</h1>
-    <p>Your space for calm in the chaos</p>
-  </header>
+    <header class="hero">
+        <img src="logo.png" alt="The Calm Capsules Logo" class="logo">
+        <h1>Step Inside. Tune Out. Recharge.</h1>
+        <p>Mobile soundproof pods for peaceful mental breaks in busy urban environments.</p>
+        <a href="contact.html" class="cta-button">Partner with Us</a>
+    </header>
 
-  <section id="features">
-    <h2>Pod Features</h2>
-    <ul>
-      <li>Soundproof and private</li>
-      <li>Soft lighting and calming music</li>
-      <li>USB-C/Power charging ports</li>
-      <li>Ventilation and air-purification</li>
-      <li>Real-time availability display</li>
-    </ul>
-  </section>
+    <section class="features">
+        <h2>Why Calm Capsules?</h2>
+        <ul>
+            <li>✔ Soundproof, serene interior</li>
+            <li>✔ Easy to deploy in parks, campuses, and workplaces</li>
+            <li>✔ Supports mindfulness, rest, and mental clarity</li>
+            <li>✔ Designed for public wellbeing</li>
+        </ul>
+    </section>
 
-  <section id="benefits">
-    <h2>Mental Health Benefits</h2>
-    <ul>
-      <li>Reduces stress and anxiety</li>
-      <li>Improves focus and productivity</li>
-      <li>Supports emotional regulation</li>
-      <li>Encourages self-reflection</li>
-      <li>Combats burnout in high-pressure jobs</li>
-    </ul>
-  </section>
-
-  <section id="testimonials">
-    <h2>What People Say</h2>
-    <blockquote>"A sanctuary in the middle of my chaotic work day." – Sarah M.</blockquote>
-    <blockquote>"The pod gave me space to reset and refocus." – James T.</blockquote>
-  </section>
-
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form action="https://formspree.io/f/mjvnlzqy" method="POST" onsubmit="showThankYou(event)">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="_replyto" required />
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" required></textarea>
-
-      <button type="submit">Send</button>
-    </form>
-    <p id="thank-you" style="display:none; color: green; margin-top: 10px;">
-      Thank you for your message! We'll be in touch soon.
-    </p>
-  </section>
-
-  <footer>
-    <p>Contact: <a href="mailto:silentpodsau@gmail.com">silentpodsau@gmail.com</a></p>
-  </footer>
-
-  <script>
-    function showThankYou(event) {
-      event.preventDefault();
-      const form = event.target;
-      fetch(form.action, {
-        method: form.method,
-        body: new FormData(form),
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        if (response.ok) {
-          form.reset();
-          document.getElementById('thank-you').style.display = 'block';
-        } else {
-          alert('Oops! Something went wrong.');
-        }
-      });
-    }
-  </script>
+    <footer>
+        <p>&copy; 2025 The Calm Capsules. All rights reserved.</p>
+    </footer>
 </body>
 </html>
