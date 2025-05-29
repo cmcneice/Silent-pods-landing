@@ -2,53 +2,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Silent Pods</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Silent Pods</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>Silent Pods</h1>
-        <p>Your private space for mental resets and quiet reflection in urban settings and construction sites.</p>
+  <header>
+    <h1>Welcome to Silent Pods</h1>
+    <p>Your space for calm in the chaos</p>
+  </header>
 
-        <section class="hero-buttons">
-            <a href="mailto:silentpodsau@gmail.com" class="btn">Email Us</a>
-            <a href="Silent_Pods_Pitch.pdf" class="btn" download>Download Pitch PDF</a>
-        </section>
+  <section>
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/mjvnlzqy" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
 
-        <section class="form-section">
-            <h2>Register Interest / Contact Us</h2>
-            <form action="https://formspree.io/f/xdoqdzjb" method="POST">
-                <input type="text" name="name" placeholder="Your Name" required />
-                <input type="email" name="email" placeholder="Your Email" required />
-                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn">Send</button>
-            </form>
-        </section>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="_replyto" required />
 
-        <section class="use-cases">
-            <h2>Use Cases</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Urban Retreats</h3>
-                    <p>Silent Pods in busy city spots offer individuals a moment to pause and recharge.</p>
-                </div>
-                <div class="card">
-                    <h3>Construction Sites</h3>
-                    <p>Workers can access a quiet pod for mental health breaks, reducing stress and promoting wellbeing.</p>
-                </div>
-                <div class="card">
-                    <h3>Mental Health Support</h3>
-                    <p>Partner with mental health programs to offer private, calm spaces across Brisbane.</p>
-                </div>
-            </div>
-        </section>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
 
-        <section class="embed-form">
-            <h2>Apply or Provide Feedback</h2>
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScj6It9KDDic4YkS2P0ZMk0Czcv9LuHYSjHMI_1l4uIUzTj_A/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </section>
-    </div>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>Contact: <a href="mailto:silentpodsau@gmail.com">silentpodsau@gmail.com</a></p>
+  </footer>
 </body>
 </html>
